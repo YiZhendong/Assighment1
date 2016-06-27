@@ -20,8 +20,8 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	//ÌîÂúÒ»ÁĞ
 	private void SetColumnStone() {
-		while(!leftIsBlocked()){
-			move();
+		while(beepersPresent()){
+			putBeeper();
 		}
 		
 	}

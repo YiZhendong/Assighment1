@@ -36,17 +36,17 @@ public class CollectNewspaperKarel extends SuperKarel {
 	 * 沿着墙走
 	 */
 	private void GoWithWall() {
-		while(frontIsClear()){		//前进
+		while(leftIsBlocked()){		//前进
 			move();
 		}
-		turnRight();					//左转
+		turnLeft();					//右转
 	}
 
 	/*
 	 * 沿着天花板走
 	 */
 	private void GoWithFloor() {
-		while(leftIsBlocked()){	//前进
+		while(frontIsClear()){	//前进
 			move();
 		}
 		turnRight();				//右转

@@ -41,7 +41,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	private void removeEastBlock() {
 		turnAround();						//后转
 		move();								//前进
-		if(beepersPresent()){
+		if(beepersPresent()){				//判断是否三个方块相邻，如果是的话，移除最东边的方块
 			move();
 			if(beepersPresent()){
 				turnAround();

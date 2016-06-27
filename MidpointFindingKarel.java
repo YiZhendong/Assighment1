@@ -8,12 +8,32 @@
  * looks for the midpoint, but must pick them up again before it
  * stops.  The world may be of any size, but you are allowed to
  * assume that it is at least as tall as it is wide.
+ * 
+ * author:zhendongYi
+ * time:2016/06/27 
  */
 
 import stanford.karel.*;
 
 public class MidpointFindingKarel extends SuperKarel {
 
-	// You fill in this part
+	public void run(){
+		putLineBlocks();
+		removeBlocksStepByStep();
+	}
+
+	private void putLineBlocks() {
+		while(frontIsClear()){
+			putBeeper();
+			move();
+		}
+		putBeeper();
+		
+	}
+
+	private void removeBlocksStepByStep() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

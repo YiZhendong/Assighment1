@@ -39,8 +39,8 @@ public class MidpointFindingKarel extends SuperKarel {
 	}
 
 	private void removeEastBlock() {
-		turnAround();
-		move();
+		turnAround();						//后转
+		move();								//前进
 		if(beepersPresent()){
 			move();
 			if(beepersPresent()){

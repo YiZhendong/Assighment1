@@ -20,7 +20,7 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	//ÌîÂúÒ»ÁĞ
 	private void SetColumnStone() {
-		while(leftIsBlocked()){
+		while(!leftIsBlocked()){
 			move();
 		}
 		

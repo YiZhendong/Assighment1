@@ -19,6 +19,8 @@ public class MidpointFindingKarel extends SuperKarel {
 
 	public void run(){
 		putLineBlocks();				//将一行填满方块
+		turnAround();						//后转
+		move();								//前进
 		removeBlocksStepByStep();		//循环从左边和右边各移动一个方块
 	}
 
@@ -50,8 +52,6 @@ public class MidpointFindingKarel extends SuperKarel {
 	}
 
 	private void removeEastBlock() {
-		turnAround();						//后转
-		move();								//前进
 		if(beepersPresent()){				//判断是否三个方块相邻，如果是的话，移除最东边的方块
 			move();
 			if(beepersPresent()){

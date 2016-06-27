@@ -20,7 +20,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 	 */
 	public void run(){
 		CollectNewspaper();		//取报纸
-		//GoBack();				//返回
+		GoBack();				//返回
 	}
 
 	/*

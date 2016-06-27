@@ -39,7 +39,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 		while(frontIsClear()){		//前进
 			move();
 		}
-		turnLeft();					//左转
+		turnRight();					//左转
 	}
 
 	/*

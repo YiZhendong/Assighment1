@@ -58,7 +58,12 @@ public class CollectNewspaperKarel extends SuperKarel {
 	}
 	
 	private void GoBack() {
-		// TODO Auto-generated method stub
+		turnAround();
+		while(frontIsClear()){
+			move();
+		}
+		turnRight();
+		move();
 		
 	}
 

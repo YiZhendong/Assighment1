@@ -43,9 +43,9 @@ public class MidpointFindingKarel extends SuperKarel {
 			if(noBeepersPresent()){				//并且前方的格子中没有被阻塞
 				turnAround();
 				move();
-				removeEastBlock();					//清除最东边的方块
+				/*removeEastBlock();					//清除最东边的方块
 				removeWestBlock();					//接着清除最西边的方块
-			}
+*/			}
 		}
 		
 	}

@@ -21,7 +21,7 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	
 	private void turnEast() {
-		while(notFacingEast()){
+		while(notFacingEast()){		//如果不是朝东，向左转，直到朝东
 			turnLeft();
 		}
 	}

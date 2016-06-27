@@ -8,6 +8,7 @@
  * to its initial position in the upper left corner of the house.
  * 
  * author:zhendongYi
+ * 2016/06/27
  */
 
 import stanford.karel.*;

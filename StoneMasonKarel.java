@@ -54,7 +54,6 @@ public class StoneMasonKarel extends SuperKarel {
 		if(noBeepersPresent()){		//判断当前位置是否有beeper,防止最后一个判断错误
 			putBeeper();
 		}
-		
 	}
 
 	private void Continue() {

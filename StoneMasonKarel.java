@@ -15,7 +15,7 @@ public class StoneMasonKarel extends SuperKarel {
 		SetColumnStone();		//将一列全部填满
 		turnBack();				//填满一列后回到该列下方
 		if(leftIsClear()){		//填满后判断是否还可以继续
-			ontinue();
+			Continue();
 		}
 	}
 	

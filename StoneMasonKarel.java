@@ -18,6 +18,7 @@ public class StoneMasonKarel extends SuperKarel {
 			turnBack();				//填满一列后回到该列下方
 			move4times();			//移动四列
 		}
+		SetColumnStone();		//将一列全部填满
 	}
 	
 	private void move4times() {
@@ -54,11 +55,6 @@ public class StoneMasonKarel extends SuperKarel {
 		if(noBeepersPresent()){		//判断当前位置是否有beeper,防止最后一个判断错误
 			putBeeper();
 		}
-	}
-
-	private void Continue() {
-		// TODO Auto-generated method stub
-		
 	}
 
 }

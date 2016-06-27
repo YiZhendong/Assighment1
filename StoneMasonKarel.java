@@ -19,6 +19,7 @@ public class StoneMasonKarel extends SuperKarel {
 			move4times();			//移动四列
 		}
 		SetColumnStone();		//将一列全部填满
+		turnBack();				//填满一列后回到该列下方
 	}
 	
 	private void move4times() {

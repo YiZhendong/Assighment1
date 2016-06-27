@@ -53,9 +53,9 @@ public class MidpointFindingKarel extends SuperKarel {
 	}
 
 	private void removeWestBlock() {		//移除最西边的方块
-		turnAround();
-		move();
-		while(beepersPresent()){
+		turnAround();						//转身
+		//move();								//move一格
+		while(beepersPresent()){			
 			while(frontIsClear()){
 				move();
 			}

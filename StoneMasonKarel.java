@@ -11,7 +11,24 @@
 import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
+	public void run(){
+		SetColumnStone();		//将一列全部填满
+		if(leftIsClear()){		//填满后判断是否还可以继续
+			Continue();
+		}
+	}
+	
+	//填满一列
+	private void SetColumnStone() {
+		while(leftIsClear()){
+			move();
+		}
+		
+	}
 
-	// You fill in this part
+	private void Continue() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

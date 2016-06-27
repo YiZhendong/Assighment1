@@ -19,9 +19,10 @@ public class MidpointFindingKarel extends SuperKarel {
 
 	public void run(){
 		putLineBlocks();				//将一行填满方块
-		removeBlocksStepByStep();		//分别从左边和右边各移动一个方块
+		removeBlocksStepByStep();		//循环从左边和右边各移动一个方块
 	}
 
+	//填满一行方块
 	private void putLineBlocks() {
 		while(frontIsClear()){
 			putBeeper();
@@ -31,7 +32,27 @@ public class MidpointFindingKarel extends SuperKarel {
 		
 	}
 
+	// 循环清除左右两边的方块
 	private void removeBlocksStepByStep() {
+		removeEastBlock();
+		removeWestBlock();
+	}
+
+	private void removeEastBlock() {
+		turnAround();
+		move();
+		if(beepersPresent()){
+			move();
+			if(beepersPresent()){
+				turnAround();
+				move();
+				move();
+				pickBeeper();
+			}
+		}
+	}
+
+	private void removeWestBlock() {
 		// TODO Auto-generated method stub
 		
 	}

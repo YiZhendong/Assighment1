@@ -10,10 +10,10 @@
 
 import stanford.karel.*;
 
-public class CollectNewspaperKarel extends Karel {
+public class CollectNewspaperKarel extends SuperKarel {
 	public void run(){
 		move();
-		
+		turnLeft();
 	}
 	
 	// You fill in this part

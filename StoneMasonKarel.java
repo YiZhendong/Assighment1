@@ -19,9 +19,12 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 	}
 	
+	//返回下方
 	private void turnBack() {
-		
-		
+		turnAround();
+		while(frontIsClear()){
+			move();
+		}
 	}
 
 	//填满一列

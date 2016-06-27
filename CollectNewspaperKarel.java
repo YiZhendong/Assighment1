@@ -10,7 +10,7 @@
 
 import stanford.karel.*;
 
-public class CollectNewspaperKarel extends SuperKarel {
+public class CollectNewspaperKarel extends superKarel {
 	public void run(){
 		move();
 		move();

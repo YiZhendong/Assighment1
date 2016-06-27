@@ -18,6 +18,8 @@ public class StoneMasonKarel extends SuperKarel {
 			turnBack();				//填满一列后回到该列下方
 			move4times();			//移动四列
 		}
+		
+		//为了让最后一列也可以判断，需要加上最后一次循环
 		SetColumnStone();		//将一列全部填满
 		turnBack();				//填满一列后回到该列下方
 	}

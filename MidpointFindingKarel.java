@@ -36,9 +36,9 @@ public class MidpointFindingKarel extends SuperKarel {
 	private void removeBlocksStepByStep() {
 		while(beepersPresent()){
 			move();
-			while(beepersPresent()){
+			if(beepersPresent()){
 				move();
-				while(beepersPresent()){
+				if(beepersPresent()){
 					removeEastBlock();					//清除最东边的方块
 					removeWestBlock();					//接着清除最西边的方块
 				}

@@ -22,10 +22,9 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	private void move4times() {
 		turnLeft();
-		move();
-		move();
-		move();
-		
+		for(int i=0;i<4;i++){
+			move();
+		}
 	}
 
 	//×ªÏò¶«

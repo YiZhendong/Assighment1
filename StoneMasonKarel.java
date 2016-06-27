@@ -20,6 +20,14 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 	}
 	
+	private void move4times() {
+		turnRight();
+		move();
+		move();
+		move();
+		
+	}
+
 	//转向东
 	private void turnEast() {
 		while(notFacingEast()){		//如果不是朝东，向左转，直到朝东

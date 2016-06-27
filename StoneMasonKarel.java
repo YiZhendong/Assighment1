@@ -45,14 +45,14 @@ public class StoneMasonKarel extends SuperKarel {
 	//填满一列
 	private void SetColumnStone() {
 		turnLeft();					//出发时向左拐
-		if(noBeepersPresent()){		//判断当前位置是否有beeper,防止最后一个判断错误
-			putBeeper();
-		}
 		while(frontIsClear()){
 			if(noBeepersPresent()){		//判断当前位置是否有beeper
 				putBeeper();
 			}
 			move();
+		}
+		if(noBeepersPresent()){		//判断当前位置是否有beeper,防止最后一个判断错误
+			putBeeper();
 		}
 		
 	}

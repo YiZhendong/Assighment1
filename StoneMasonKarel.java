@@ -13,15 +13,19 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 	public void run(){
 		while(frontIsClear()){
-			while(notFacingEast()){
-				turnLeft();
-			}
+			turnEast();				//将起始位置朝东
 			SetColumnStone();		//将一列全部填满
 			turnBack();				//填满一列后回到该列下方
 			
 		}
 	}
 	
+	private void turnEast() {
+		while(notFacingEast()){
+			turnLeft();
+		}
+	}
+
 	//返回下方
 	private void turnBack() {
 		turnAround();

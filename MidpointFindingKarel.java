@@ -54,13 +54,14 @@ public class MidpointFindingKarel extends SuperKarel {
 
 	private void removeWestBlock() {
 		turnAround();
-		/*while(beepersPresent()){
+		move();
+		while(beepersPresent()){
 			move();
 		}
 		turnAround();
 		move();
 		pickBeeper();
-		*/
+		
 	}
 
 }

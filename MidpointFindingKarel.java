@@ -18,8 +18,8 @@ import stanford.karel.*;
 public class MidpointFindingKarel extends SuperKarel {
 
 	public void run(){
-		putLineBlocks();
-		removeBlocksStepByStep();
+		putLineBlocks();				//将一行填满方块
+		removeBlocksStepByStep();		//分别从左边和右边各移动一个方块
 	}
 
 	private void putLineBlocks() {

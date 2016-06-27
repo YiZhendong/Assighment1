@@ -62,8 +62,8 @@ public class MidpointFindingKarel extends SuperKarel {
 				break;
 			}
 		}
-		/*turnAround();
-		pickBeeper();*/
+		turnAround();
+		pickBeeper();
 		
 	}
 

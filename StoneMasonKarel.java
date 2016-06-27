@@ -16,7 +16,7 @@ public class StoneMasonKarel extends SuperKarel {
 			turnEast();				//将起始位置朝东
 			SetColumnStone();		//将一列全部填满
 			turnBack();				//填满一列后回到该列下方
-			
+			move4times();			//移动四列
 		}
 	}
 	

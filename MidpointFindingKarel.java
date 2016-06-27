@@ -44,7 +44,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		if(beepersPresent()){				//判断是否三个方块相邻，如果是的话，移除最东边的方块
 			move();
 			if(beepersPresent()){
-				turnAround();
+				turnAround();				//存在，则后退，移除
 				move();
 				move();
 				pickBeeper();

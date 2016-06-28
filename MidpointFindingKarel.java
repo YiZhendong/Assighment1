@@ -88,7 +88,6 @@ public class MidpointFindingKarel extends SuperKarel {
 	//移除最西边的方块
 	private void removeWestBlock() {		
 		pickBeeper();
-		turnAround();
 	}
 
 }

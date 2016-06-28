@@ -41,6 +41,9 @@ public class MidpointFindingKarel extends SuperKarel {
 			moveToBlockEnd();
 			removeBlock();		
 		}
+		if(blockNumber()==2){
+			
+		}
 	}
 	
 	//移除最边上的beeper,并前进一小格，走到beeper的地方

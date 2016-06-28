@@ -33,14 +33,13 @@ public class MidpointFindingKarel extends SuperKarel {
 		
 	}
 
-	// 循环清除左右两边的方块
+	// 如果beeper数量大于2，则循环清除左右两边的方块，否则什么也不做
 	private void removeBlocksStepByStep() {
 		while(blockNumber()>2){	
 			moveToBlockEnd();
 			removeBlock();
 			moveToBlockEnd();
-			removeBlock();
-			
+			removeBlock();		
 		}
 	}
 	

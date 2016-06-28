@@ -11,6 +11,7 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 	public void run(){
+		putBeeper();
 		while((frontIsClear()||leftIsClear())&&(frontIsClear()||rightIsClear())){
 			if(frontIsClear()){
 				move();

@@ -17,6 +17,9 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 	public void run(){
 		putBeeper();					//首先放置一个beeper
+		moveOn();
+		moveOn();
+		putBeeper();
 		while(LoopCondition()){			//满足循环条件的话就继续
 			moveOn();					//前进一格（直走或者转向都算前进）
 			if(!LoopCondition()) break;

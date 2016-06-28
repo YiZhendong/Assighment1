@@ -38,8 +38,8 @@ public class MidpointFindingKarel extends SuperKarel {
 	// 循环清除左右两边的方块
 	private void removeBlocksStepByStep() {
 		while(blockNumber()>2){		
-/*			removeEastBlock();
-			removeWestBlock();*/
+			removeEastBlock();
+			removeWestBlock();
 			
 		}
 		/*while(beepersPresent()){

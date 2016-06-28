@@ -79,7 +79,7 @@ public class MidpointFindingKarel extends SuperKarel {
 				move();
 			}
 		}
-		
+		turnAround();
 		return i;
 	}
 

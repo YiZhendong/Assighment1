@@ -5,51 +5,22 @@
  * a checkerboard using beepers, as described in Assignment 1.  You
  * should make sure that your program works for all of the sample
  * worlds supplied in the starter folder.
+ * 算法：以一条龙的方式前进，每走两格，放置一个beeper
+ * 关键：转向的判断，以及放置beeper的时机
+ * 
+ * 转向：无论何时遇到障碍，将karel转至朝北方向，然后前进，再转向没有障碍的一侧
+ * 放置beeper：第一个方法moveOn只前进，第二方法moveOnAndPutBeeper()前进后并放置beeper；
  */
 
 import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 	public void run(){
-		putBeeper();
-		while(LoopCondition()){
-			moveOn();
-			moveOnAndPutBeeper();
+		putBeeper();					//首先放置一个beeper
+		while(LoopCondition()){			//满足循环条件的话就继续
+			moveOn();					//前进一格（直走或者转向都算前进）
+			moveOnAndPutBeeper();		//前进一格并放置一个beeper
 		}
-		/*while((frontIsClear()||leftIsClear())&&(frontIsClear()||rightIsClear())){
-			if(frontIsClear()){
-				move();
-			}else{
-				while(notFacingNorth()){			//如果不朝北边的话，转向以朝北
-					turnLeft();					
-				}
-				move();
-				//转向后向左向右转
-				if(leftIsClear()){
-					turnLeft();
-				}else{
-					turnRight();
-				}
-			}
-			
-			//添加beeper
-			if(frontIsClear()){
-				move();
-				putBeeper();
-			}else{
-				while(notFacingNorth()){
-					turnLeft();
-					
-				}
-				move();
-				putBeeper();
-				if(leftIsClear()){
-					turnLeft();
-				}else{
-					turnRight();
-				}
-			}
-		}*/
 	}
 
 	private void moveOnAndPutBeeper() {

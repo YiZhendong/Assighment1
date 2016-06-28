@@ -38,8 +38,8 @@ public class MidpointFindingKarel extends SuperKarel {
 		while(blockNumber()>2){	
 			moveToBlockEnd();
 			removeEastBlock();
-			/*moveToBlockEnd();
-			removeWestBlock();	*/
+			moveToBlockEnd();
+			removeWestBlock();	
 		}
 	}
 	

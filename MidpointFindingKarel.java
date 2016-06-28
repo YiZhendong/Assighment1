@@ -46,14 +46,13 @@ public class MidpointFindingKarel extends SuperKarel {
 	
 	//移除最边上的beeper,并前进一小格，走到beeper的地方
 	private void removeBlock() {
-		// TODO Auto-generated method stub
 		pickBeeper();
 		move();
 	}
 
 	/*
 	 * 条件：karel位于有block的一端
-	 * 结果：karel跑到有block的另一端，i为block数量，转向
+	 * 结果：karel跑到有block的另一端，i为block数量，并转向两次以避免奇数次对循环造成影响
 	 */
 	private int blockNumber() {
 		// 计算所有的block的数量

@@ -69,7 +69,11 @@ public class MidpointFindingKarel extends SuperKarel {
 		}
 		*/
 	}
-
+	
+	/*
+	 * 条件：karel位于有block的一端
+	 * 结果：karel跑到有block的另一端，i为block数量，转向
+	 */
 	private int blockNumber() {
 		// 计算所有的block的数量
 		int i=0;

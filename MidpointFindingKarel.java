@@ -60,6 +60,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		}
 		turnAround();
 		System.out.print(i);
+		System.out.print(facingEast());
 		return i;
 		
 	}

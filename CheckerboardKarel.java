@@ -27,11 +27,10 @@ public class CheckerboardKarel extends SuperKarel {
 		// TODO Auto-generated method stub
 		if(frontIsClear()){
 			move();
-			putBeeper();
 		}else{
 			upAndTurnAround();
-			putBeeper();
 		}
+		putBeeper();
 	}
 
 	private void moveOn() {

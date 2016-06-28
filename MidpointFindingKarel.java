@@ -39,36 +39,8 @@ public class MidpointFindingKarel extends SuperKarel {
 			moveToBlockEnd();
 			removeEastBlock();
 			moveToBlockEnd();
-			removeWestBlock();
-			
+			removeWestBlock();	
 		}
-		/*while(beepersPresent()){
-			move();
-			if(beepersPresent()){
-				move();
-				if(beepersPresent()){
-					turnAround();
-					move();
-					move();
-					pickBeeper();
-					break;
-				}
-			}
-		}
-		*/
-		/*removeEastBlock();					//清除最东边的方块
-		removeWestBlock();					//接着清除最西边的方块
-		while(beepersPresent()){			//如果当先存在方块
-			move();
-			
-		}
-		if(noBeepersPresent()){				//并且前方的格子中没有被阻塞
-			turnAround();
-			move();
-			removeEastBlock();					//清除最东边的方块
-			removeWestBlock();					//接着清除最西边的方块
-		}
-		*/
 	}
 	
 	/*
@@ -105,17 +77,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	}
 
 	private void removeEastBlock() {
-		
-		
-		/*if(beepersPresent()){				//判断是否三个方块相邻，如果是的话，移除最东边的方块
-			move();
-			if(beepersPresent()){
-				turnAround();				//存在，则后退，移除
-				move();
-				move();
-				pickBeeper();
-			}
-		}*/
+		pickBeeper();
 	}
 
 	//移除最西边的方块

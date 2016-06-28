@@ -40,7 +40,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			/*moveToBlockEnd();
 			removeEastBlock();
 			moveToBlockEnd();
-			removeWestBlock();	*/
+			removeWestBlock();*/	
 		}
 	}
 	

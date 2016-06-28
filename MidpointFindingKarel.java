@@ -19,7 +19,7 @@ public class MidpointFindingKarel extends SuperKarel {
 
 	public void run(){
 		putLineBlocks();				//将一行填满方块,并转向
-		removeBlocksStepByStep();		//循环从左边和右边各移动一个方块
+		//removeBlocksStepByStep();		//循环从左边和右边各移动一个方块
 	}
 
 	//填满一行方块,并转向

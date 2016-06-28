@@ -42,6 +42,7 @@ public class CheckerboardKarel extends SuperKarel {
 					turnLeft();
 					move();
 				}
+				//转向后向左向右转
 				if(leftIsClear()){
 					turnLeft();
 				}else{

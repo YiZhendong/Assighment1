@@ -36,6 +36,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	// 循环清除左右两边的方块
 	private void removeBlocksStepByStep() {
 		while(blockNumber()>2){	
+			System.out.println(i);
 			moveToBlockEnd();
 			removeEastBlock();
 			moveToBlockEnd();
@@ -52,7 +53,6 @@ public class MidpointFindingKarel extends SuperKarel {
 		int i=0;
 		while(beepersPresent()){
 			i++;
-			System.out.println(i);
 			if(frontIsClear()){
 				move();
 			}else{

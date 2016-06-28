@@ -69,7 +69,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	 * 将karel移到存在beeper所有的位置的最边上的一点
 	 */
 	private void moveToBlockEnd() {
-		while(frontIsBlocked()&beepersPresent()){
+		while(frontIsClear()&beepersPresent()){
 			move();
 		}
 		if(beepersPresent()){

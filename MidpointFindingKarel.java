@@ -37,8 +37,10 @@ public class MidpointFindingKarel extends SuperKarel {
 
 	// 循环清除左右两边的方块
 	private void removeBlocksStepByStep() {
-		while(blockNumber()>2){		
+		while(blockNumber()>2){	
+			moveToEast();
 			removeEastBlock();
+			moveToWest();
 			removeWestBlock();
 			
 		}
@@ -89,7 +91,15 @@ public class MidpointFindingKarel extends SuperKarel {
 	}
 
 	private void removeEastBlock() {
-		if(beepersPresent()){				//判断是否三个方块相邻，如果是的话，移除最东边的方块
+		while(frontIsBlocked()&&beepersPresent()){
+			move();
+		}
+		if(beepersPresent()){
+			turnAround();
+			move();
+		}
+		
+		/*if(beepersPresent()){				//判断是否三个方块相邻，如果是的话，移除最东边的方块
 			move();
 			if(beepersPresent()){
 				turnAround();				//存在，则后退，移除
@@ -97,7 +107,7 @@ public class MidpointFindingKarel extends SuperKarel {
 				move();
 				pickBeeper();
 			}
-		}
+		}*/
 	}
 
 	//移除最西边的方块

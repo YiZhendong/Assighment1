@@ -44,7 +44,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		}
 	}
 	
-	//移除最边上的beeper
+	//移除最边上的beeper,并前进一小格，走到beeper的地方
 	private void removeBlock() {
 		// TODO Auto-generated method stub
 		pickBeeper();
@@ -97,16 +97,4 @@ public class MidpointFindingKarel extends SuperKarel {
 		}
 	}
 	
-	//移除最
-	private void removeEastBlock() {
-		pickBeeper();
-		move();
-	}
-
-	//移除最西边的方块
-	private void removeWestBlock() {		
-		pickBeeper();
-		move();
-	}
-
 }

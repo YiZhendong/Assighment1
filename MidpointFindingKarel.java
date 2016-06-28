@@ -52,6 +52,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		int i=0;
 		while(beepersPresent()){
 			i++;
+			System.out.println(i);
 			if(frontIsClear()){
 				move();
 			}else{

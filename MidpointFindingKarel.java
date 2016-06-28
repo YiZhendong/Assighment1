@@ -36,17 +36,21 @@ public class MidpointFindingKarel extends SuperKarel {
 	// 循环清除左右两边的方块
 	private void removeBlocksStepByStep() {
 		while(blockNumber()>2){	
-			
 			moveToBlockEnd();
-			
-			removeEastBlock();
-			
+			removeBlock();
 			moveToBlockEnd();
-			removeWestBlock();
+			removeBlock();
 			
 		}
 	}
 	
+	//移除最边上的beeper
+	private void removeBlock() {
+		// TODO Auto-generated method stub
+		pickBeeper();
+		move();
+	}
+
 	/*
 	 * 条件：karel位于有block的一端
 	 * 结果：karel跑到有block的另一端，i为block数量，转向
@@ -93,6 +97,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		}
 	}
 	
+	//移除最
 	private void removeEastBlock() {
 		pickBeeper();
 		move();

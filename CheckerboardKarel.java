@@ -26,7 +26,7 @@ public class CheckerboardKarel extends SuperKarel {
 	/*
 	 * 只前进，不放置beeper
 	 * 如果前方无障碍，move
-	 * 否则，上转并转向
+	 * 否则，向上转并转向
 	 */
 	private void moveOnAndPutBeeper() {
 		if(frontIsClear()){

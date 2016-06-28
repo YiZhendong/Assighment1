@@ -11,6 +11,7 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 
-	// You fill in this part
-
+	while((frontIsClear()||leftIsClear())&&(frontIsClear()||rightIsClear())){
+		System.out.println(0);
+	}
 }

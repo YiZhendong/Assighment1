@@ -6,10 +6,10 @@
  * should make sure that your program works for all of the sample
  * worlds supplied in the starter folder.
  * 算法：以一条龙的方式前进，每走两格，放置一个beeper
- * 关键：转向的判断，以及放置beeper的时机
+ * 关键：转向的判断
  * 
  * 转向：无论何时遇到障碍，将karel转至朝北方向，然后前进，再转向没有障碍的一侧
- * 放置beeper：第一个方法moveOn只前进，第二方法moveOnAndPutBeeper()前进后并放置beeper；
+ * 待改进：最后运行时无法正常停止，直到被阻挡
  */
 
 import stanford.karel.*;

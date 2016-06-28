@@ -42,8 +42,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			removeEastBlock();
 			
 			moveToBlockEnd();
-			break;
-			/*removeWestBlock();*/
+			removeWestBlock();
 			
 		}
 	}
@@ -102,6 +101,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	//移除最西边的方块
 	private void removeWestBlock() {		
 		pickBeeper();
+		move();
 	}
 
 }

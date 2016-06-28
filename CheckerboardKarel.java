@@ -24,9 +24,10 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 
 	/*
-	 * 只前进，不放置beeper
+	 * 前进，并放置beeper
 	 * 如果前方无障碍，move
 	 * 否则，向上转并转向
+	 * 最后放置beeper
 	 */
 	private void moveOnAndPutBeeper() {
 		if(frontIsClear()){
@@ -38,7 +39,6 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 
 	private void moveOn() {
-		// TODO Auto-generated method stub
 		if(frontIsClear()){
 			move();
 		}else{

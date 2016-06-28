@@ -61,6 +61,9 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 
+	/*
+	 * 转向，直到面朝北
+	 */
 	private void faceToNorth() {
 		// TODO Auto-generated method stub
 		while(notFacingNorth()){

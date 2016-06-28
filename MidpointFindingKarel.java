@@ -57,10 +57,10 @@ public class MidpointFindingKarel extends SuperKarel {
 			}else{
 				break;
 			}
-			System.out.print(i);
 		}
 		turnAround();
 		return i;
+		System.out.print(i);
 	}
 
 	/*

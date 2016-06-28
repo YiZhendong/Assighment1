@@ -71,6 +71,10 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 
+	/*
+	 * 循环条件函数
+	 * 根据前左右的情况判断是否继续循环
+	 */
 	private boolean LoopCondition() {
 		// TODO Auto-generated method stub
 		return (frontIsClear()||leftIsClear())&&(frontIsClear()||rightIsClear());

@@ -41,11 +41,11 @@ public class CheckerboardKarel extends SuperKarel {
 				while(notFacingNorth()){
 					turnLeft();
 					move();
-					if(leftIsClear()){
-						turnLeft();
-					}else{
-						turnRight();
-					}
+				}
+				if(leftIsClear()){
+					turnLeft();
+				}else{
+					turnRight();
 				}
 			}
 			if(frontIsClear()){
@@ -56,11 +56,11 @@ public class CheckerboardKarel extends SuperKarel {
 					turnLeft();
 					move();
 					putBeeper();
-					if(leftIsClear()){
-						turnLeft();
-					}else{
-						turnRight();
-					}
+				}
+				if(leftIsClear()){
+					turnLeft();
+				}else{
+					turnRight();
 				}
 			}
 		}

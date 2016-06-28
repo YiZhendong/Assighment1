@@ -12,28 +12,6 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 	public void run(){
 		putBeeper();
-		loopCondition1();
-		/*while(loopCondition()){
-			moveToRight();
-			turnToUpLine();
-			moveToLeft();
-			turnToUpLine();
-		}		*/
-	}
-	
-	private boolean loopCondition(){
-		return (frontIsClear()||leftIsClear())&&(frontIsClear()||rightIsClear());
-	}
-	
-	private void moveToRight(){
-		if(frontIsClear()){
-			move();
-		}else{
-			
-		}
-	}
-
-	private boolean loopCondition1() {
 		while((frontIsClear()||leftIsClear())&&(frontIsClear()||rightIsClear())){
 			if(frontIsClear()){
 				move();
@@ -69,6 +47,6 @@ public class CheckerboardKarel extends SuperKarel {
 				}
 			}
 		}
-		return false;
 	}
+
 }

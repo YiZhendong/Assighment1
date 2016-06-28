@@ -59,9 +59,9 @@ public class MidpointFindingKarel extends SuperKarel {
 			}
 		}
 		turnAround();
-		System.out.print(i);
-		System.out.print(facingEast());
 		
+		
+		//再转回来
 		while(beepersPresent()){
 			if(frontIsClear()){
 				move();

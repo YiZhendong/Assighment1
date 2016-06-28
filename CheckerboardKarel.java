@@ -19,9 +19,8 @@ public class CheckerboardKarel extends SuperKarel {
 		putBeeper();					//首先放置一个beeper
 		while(LoopCondition()){			//满足循环条件的话就继续
 			moveOn();					//前进一格（直走或者转向都算前进）
-			//moveOnAndPutBeeper();		//前进一格并放置一个beeper
-			moveOn();
-			putBeeper();
+			moveOn();					//继续前进一格
+			putBeeper();				//放置一个beeper
 		}
 	}
 

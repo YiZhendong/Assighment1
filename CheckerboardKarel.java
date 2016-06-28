@@ -24,21 +24,12 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 
-	/*
-	 * 前进，并放置beeper
-	 * 如果前方无障碍，move
-	 * 否则，向上转并转向
-	 * 最后放置beeper
-	 */
-	private void moveOnAndPutBeeper() {
-		if(frontIsClear()){
-			move();
-		}else{
-			upAndTurnAround();
-		}
-		putBeeper();
-	}
 
+	/*
+	 * 前进一格，直走或者转向并move
+	 * 如果前方是空的话，move，
+	 * 否则，向上拐，并转向
+	 */
 	private void moveOn() {
 		if(frontIsClear()){
 			move();
@@ -48,6 +39,10 @@ public class CheckerboardKarel extends SuperKarel {
 		
 	}
 
+	/*
+	 * 向上拐并转向
+	 * 首先将方向朝向北，然后向上转并转向
+	 */
 	private void upAndTurnAround() {
 		// TODO Auto-generated method stub
 		faceToNorth();

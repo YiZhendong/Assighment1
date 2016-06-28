@@ -12,13 +12,16 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 	public void run(){
 		putBeeper();
-		while((frontIsClear()||leftIsClear())&&(frontIsClear()||rightIsClear())){
+		while(LoopCondition()){
+			moveOn();
+			moveOnAndPutBeeper();
+		}
+		/*while((frontIsClear()||leftIsClear())&&(frontIsClear()||rightIsClear())){
 			if(frontIsClear()){
 				move();
 			}else{
 				while(notFacingNorth()){			//如果不朝北边的话，转向以朝北
-					turnLeft();
-					
+					turnLeft();					
 				}
 				move();
 				//转向后向左向右转
@@ -46,7 +49,57 @@ public class CheckerboardKarel extends SuperKarel {
 					turnRight();
 				}
 			}
+		}*/
+	}
+
+	private void moveOnAndPutBeeper() {
+		// TODO Auto-generated method stub
+		if(frontIsClear()){
+			move();
+			putBeeper();
+		}else{
+			upAndTurnAround();
+			putBeeper();
 		}
+	}
+
+	private void moveOn() {
+		// TODO Auto-generated method stub
+		if(frontIsClear()){
+			move();
+		}else{
+			upAndTurnAround();
+		}
+		
+	}
+
+	private void upAndTurnAround() {
+		// TODO Auto-generated method stub
+		faceToNorth();
+		upAndTurn();
+	}
+
+	private void upAndTurn() {
+		// TODO Auto-generated method stub
+		move();
+		//转向后向左向右转
+		if(leftIsClear()){
+			turnLeft();
+		}else{
+			turnRight();
+		}
+	}
+
+	private void faceToNorth() {
+		// TODO Auto-generated method stub
+		while(notFacingNorth()){
+			turnLeft();			
+		}
+	}
+
+	private boolean LoopCondition() {
+		// TODO Auto-generated method stub
+		return (frontIsClear()||leftIsClear())&&(frontIsClear()||rightIsClear());
 	}
 
 }

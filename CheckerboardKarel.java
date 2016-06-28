@@ -38,7 +38,7 @@ public class CheckerboardKarel extends SuperKarel {
 			if(frontIsClear()){
 				move();
 			}else{
-				while(notFacingNorth()){
+				while(notFacingNorth()){			//如果不朝北边的话，转向以朝北
 					turnLeft();
 					move();
 				}
@@ -48,6 +48,8 @@ public class CheckerboardKarel extends SuperKarel {
 					turnRight();
 				}
 			}
+			
+			//添加beeper
 			if(frontIsClear()){
 				move();
 				putBeeper();

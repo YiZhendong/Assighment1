@@ -49,10 +49,11 @@ public class CheckerboardKarel extends SuperKarel {
 		upAndTurn();
 	}
 
+	/*
+	 * 前进，并根据左右情况转向
+	 */
 	private void upAndTurn() {
-		// TODO Auto-generated method stub
 		move();
-		//转向后向左向右转
 		if(leftIsClear()){
 			turnLeft();
 		}else{
